@@ -4,12 +4,12 @@ const button = document.querySelector('.card-footer-button');
 const divider = document.querySelector('.card-footer img');
 
 const handleDom = data => {
-  const desktop = window.matchMedia('(min-width: 768px)');
+  const desktop = window.matchMedia('(min-width: 48em)');
 
   if (desktop.matches) {
-    divider.src = '../images/pattern-divider-desktop.svg';
+    divider.src = './images/pattern-divider-desktop.svg';
   } else {
-    divider.src = '../images/pattern-divider-mobile.svg';
+    divider.src = './images/pattern-divider-mobile.svg';
   }
 
   if(data.hasOwnProperty('slip'))  { 
